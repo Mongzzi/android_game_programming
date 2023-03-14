@@ -97,6 +97,8 @@ ImageView iv = findViewById(R.id.mainImageView)
 
 final - cpp에서 const 역할
 
+        prevButton.setEnabled(page>1);
+        nextButton.setEnabled(page<IMG_RES_IDS.length);
 
 
 ________________________________________________________
