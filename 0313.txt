@@ -89,7 +89,9 @@ Log  - 로그 출력 ( e -에러 , w , i , d ,v 순으로 심각도 내림차순
 
 public static final String TAG = MainActivity.class.getSimpleName();
 
-
+속성 변경하려고 할시 버튼에 대한 아이디가 필요 R.java에서 사용가능
+android:id = "@+id/aaaa"
+ImageView iv = findViewById(R.id.mainImageView)
 
 
 ________________________________________________________
