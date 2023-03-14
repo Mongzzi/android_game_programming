@@ -93,6 +93,11 @@ public static final String TAG = MainActivity.class.getSimpleName();
 android:id = "@+id/aaaa"
 ImageView iv = findViewById(R.id.mainImageView)
 
+        iv.setImageResource(); 
+
+final - cpp에서 const 역할
+
+
 
 ________________________________________________________
 
