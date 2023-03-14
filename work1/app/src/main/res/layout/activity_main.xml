@@ -7,17 +7,38 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/snumTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2018182004 김나현"
-        android:textSize="30sp"
         android:rotation="10"
         android:rotationX="20"
         android:rotationY="30"
+        android:text="2018182004 김나현"
+        android:textSize="30sp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/pushMebutton"
+        android:onClick="onBtnPushMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="152dp"
+        android:text="Push me"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/anotherButton"
+        android:onClick="onBtnAnother"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Another"
+        tools:layout_editor_absoluteX="261dp"
+        tools:layout_editor_absoluteY="152dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
