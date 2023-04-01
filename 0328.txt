@@ -131,6 +131,48 @@ reserveFrame 다음 프레임을 예약한다
 
 __________________________________________________________________
 
+posDelayed 의 파라미터 delayMillis 항목 -> __ 밀리초 이후에 다시 불려 줘
+
+정확 하지는 않음
+
+
+Choreographer - v싱크(수직동기화) 잘되게 하기위함  , 싱글톤 형식으로 되어 있음
+
+
+
+public class Ball {
+    private static Bitmap bitmap;
+
+static - 객체 소유 x 클래스가 소유 o
+
+ArrayList< class > -> 클래스를 멤버로 하는 배열 
+( 벡터(쓰레드 세잎)와 비슷 , ArrayList(쓰레드 세잎 x) 냉장고 비유 )
+			-> []와는 다르게 크기 조절 가능
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
