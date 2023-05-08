@@ -1,0 +1,186 @@
+_______________________________________________________
+
+0313
+
+디자인 타임
+런 타임에 텍스트 바꾸기
+
+객체 레퍼런스 얻어야함
+ ㄴ fvbi - findViewById(100);
+	
+.setText("asdsda");
+
+android::id=" "
+
+@+id -> 안드로이드 운영체제에서 알아서
+
+@+id/snumTextView
+
+snumTextView <- 내가 정한 이름
+
+R.id.snumTextView
+
+자바 패키지안에 들어있지 않은 클래스 사용하려면 
+다 임포트를 써줘야함
+
+TextView -> 
+
+어느정도 치고 엔터치면 알아서 임포트까지해줌 (스페이스 x)
+알트 + 엔터 -> 임포트 해야하는거 알아서 찾아줌
+알트 엔터 -> 만병통치약
+
+-------------------------------------------------------
+Button
+.setOnClickListener(xx) -> 클릭되면 xx에게 알려 줘
+방법 4가지 중요!
+어떤거 쓸지는 개인취향
+
+
+.setOnClickListener(this);
+
+this 부분 누르고 알트엔터 두번째거 make implements
+
+<이벤트연결>
+
+첫번째 방법 - 한개 리스너를 두개이상의 객체에 (스위치문)
+		(나에게 알려줘) .setOnClickListener(this);
+
+두번재 방법 - 멤버변수 사용
+		(멤버변수에게 알려줘) btn.setOnClickListener(anotherOnClickHandler);
+
+세번째 방법 - 
+.setOnClickListener(new 엔터);
+
+네번쨰방법 - xml에서
+        android:onClick="onBtn"
+
+java에서 
+onBnt 함수형식
+
+public void
+
+-----------------------------------------------------
+
+
+manifests - 뭐가 들어있고 어떤 특징을 가지는가 기술되어있음
+
+
+강의 자료 <Image Switcher & Cards>
+
+/Linear(Vertical)
+	/ Linear(Horizontal) (h=)
+		/Button (w=)
+		/TextView (fill)
+		/Button (w=)
+	/ImageView (fill)
+
+_______________________________________________________
+
+<0314>
+
+나머지 공간 채우는 방법 android:layout_weight
+
+Log  - 로그 출력 ( e -에러 , w , i , d ,v 순으로 심각도 내림차순 )
+대체로 d (debug) 사용 
+
+모든 로그 두개 인자(String 타입 tag,  msg) 필요
+
+로그 출력하려고 할시 태그를 리네임 하고난후 실행 
+
+public static final String TAG = MainActivity.class.getSimpleName();
+
+속성 변경하려고 할시 버튼에 대한 아이디가 필요 R.java에서 사용가능
+android:id = "@+id/aaaa"
+ImageView iv = findViewById(R.id.mainImageView)
+
+        iv.setImageResource(); 
+
+final - cpp에서 const 역할
+
+        prevButton.setEnabled(page>1);
+        nextButton.setEnabled(page<IMG_RES_IDS.length);
+
+
+________________________________________________________
+
+
+invalidate() -> 호출함으로써 on draw 다시 불리 수 있게 함
+
+
+            @Override
+            public void run() {
+                update();
+                invalidate();
+                reserveFrame();
+            }
+
+
+run()
+{
+
+
+update 계산한다
+invalidate 불린다
+reserveFrame 다음 프레임을 예약한다
+
+
+}
+
+게임루프!
+
+
+__________________________________________________________________
+
+posDelayed 의 파라미터 delayMillis 항목 -> __ 밀리초 이후에 다시 불려 줘
+
+정확 하지는 않음
+
+
+Choreographer - v싱크(수직동기화) 잘되게 하기위함  , 싱글톤 형식으로 되어 있음
+
+
+
+public class Ball {
+    private static Bitmap bitmap;
+
+static - 객체 소유 x 클래스가 소유 o
+
+ArrayList< class > -> 클래스를 멤버로 하는 배열 
+( 벡터(쓰레드 세잎)와 비슷 , ArrayList(쓰레드 세잎 x) 냉장고 비유 )
+			-> []와는 다르게 크기 조절 가능
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
